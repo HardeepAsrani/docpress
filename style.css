@@ -1,0 +1,614 @@
+/*
+Theme Name: DocPress
+Theme URI: http://www.hardeepasrani.com/portfolio/wordpress-themes/docpress/
+Author: Hardeep Asrani
+Author URI: http://www.hardeepasrani.com/
+Description: DocPress is a responsive WordPress theme for documentation sites. If you want a documentation website for your product then this is the best pick, and it also has a search bar on the top section which makes it easier to use search for the content. Apart from that, it's built on Bootstrap!
+Version: 0.09
+Tags: blue, white, light, responsive-layout, two-columns, left-sidebar, custom-header, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: docpress
+
+DocPress WordPress Theme, Copyright 2015 Hardeep Asrani
+Hardeep is distributed under the terms of the GNU GPL
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body, 
+input {
+    font-family: "Raleway", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+body {
+    line-height: 2;
+    color: #444;
+    background: #fff;
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+iframe {
+    max-height: 100%;
+}
+
+img {
+    height:auto;
+}
+
+label {
+    display: block;
+}
+
+iframe {
+    border: 0 !important;
+}
+
+pre {
+    overflow: auto;
+}
+
+button,input,select,textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+	color: #000;
+}
+
+input, textarea {
+	padding: 5px;
+}
+
+button,input {
+	line-height: normal;
+}
+
+button,select {
+	text-transform: none;
+}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],html input[disabled] {
+	cursor: default;
+}
+
+input[type="checkbox"],input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.float-left {
+    float :left;
+}
+
+.float-right {
+    float: right; 
+}
+
+.container {
+    width: 95%;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+strong, dt, h3, h4 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+
+
+h1,
+h2,
+h3 {
+    line-height: 40px;
+}
+
+h1 {
+    font-size:38.5px;
+}
+
+h2 {
+    font-size:31.5px;
+}
+
+h3 {
+    font-size:24.5px;
+}
+
+h4 {
+    font-size:17.5px;
+}
+
+h5 {
+    font-size:14px;
+}
+
+h6 {
+    font-size:11.9px;
+}
+
+hr {
+    background: #EEE;
+    border: 0;
+    height: 1px;
+    margin: 40px 0 40px;
+}
+
+blockquote {
+    margin: 1em 0;
+    border-left: 3px solid #ccc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+dt {
+}
+
+dd {
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+a {
+    -webkit-transition: all ease 150ms;
+    -moz-transition: all ease 150ms;
+    -o-transition: all ease 150ms;
+    transition: all ease 150ms;
+    text-decoration: none;
+    color: #26abe2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #47b5e2;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 4rem;
+	width: 100%;
+}
+
+/* WordPress */
+.screen-reader-text {}
+.avatar {
+    float: left;
+	margin-right: 25px;
+}
+.alignleft .avatar {
+	margin-right: 24px;
+	margin-right: 2.4rem;
+}
+.alignright .avatar {
+	margin-left: 24px;
+	margin-left: 2.4rem;
+}
+.search-submit input[type="submit"],
+input[type="submit"].search-submit,
+.post-password-form input[type="submit"]{
+	width: 100px;
+}
+article.sticky h2:before {
+    content: "Featured: ";
+}
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 24px;
+	margin: 0 auto 2.4rem;
+}
+img.alignnone {
+	margin-bottom: 12px;
+	margin-bottom: 1.2rem;
+}
+.alignleft {
+	float: left;
+	text-align: left;
+}
+.alignright {
+	float: right;
+	text-align: right;
+}
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 24px 24px 0;
+	margin: 0 2.4rem 2.4rem 0;
+}
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 24px 24px;
+	margin: 0 0 2.4rem 2.4rem;
+}
+.wp-caption {
+    max-width: 100%;
+}
+.wp-caption-text {
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: center;
+}
+.gallery-caption {
+}
+.bypostauthor {
+}
+.widget_calendar table {
+	width: 100%;
+}
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+.pagination {
+    display: block;
+}
+
+.pagination .right {
+    float: right;
+}
+
+/* Header Styles */
+header {
+    padding: 2em 0 2em 0; 
+    text-align: center; 
+    background: #124459; 
+    color: #fff;
+}
+
+.site-title {
+    font-weight: unset;
+}
+
+.site-title .navbar-brand {
+    font-size: 40px;
+    padding: 10px;
+}
+
+header h2 {
+    margin: 0 0 1em 0;
+}
+
+.docs-main {
+    padding: 8em 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.docs-header h2 {
+    font-size: 40px;
+}
+
+.docs-header h2,
+.docs-header h4 {
+    margin: 0;
+    font-weight: unset;
+}
+
+.docs-header .search-form {
+    margin-top: 20px;
+}
+
+.docs-header .search-field {
+    max-width: 100%;
+    width: 70%;
+    border: 0px;
+    height: 50px;
+    display: inline-block;
+}
+
+.docs-header .search-submit {
+    width: 100px;
+    color: #FFF;
+    background: #26ABE2;
+    border: 0px;
+    height: 50px;
+    display: inline-block;
+}
+
+article {
+    word-wrap: break-word;
+}
+
+article .title,
+article .title h1,
+article .title h1:hover {
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+article .title h2,
+article .title h2:hover {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+article.docs-markup:nth-child(even){
+    background: #F5F5F5;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.entry-footer .entry-meta span {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+footer p {
+    margin: 0;
+    color: #999;
+}
+
+.no-comments {
+	font-size: 25px;
+	text-align: center;
+	padding: 20px;
+}
+.form-allowed-tags code {
+	background: none;
+	border: none;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #26ABE2;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.navbar .container-fluid {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar-brand,
+.navbar-nav > li > a,
+.navbar-brand:focus,
+.navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFF;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover,
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:focus,
+.navbar-nav > .open > a:hover {
+    color: #FFF;
+    background-color: #195974;
+}
+
+.navbar-toggle {
+    border-color: #FFF;
+    background: #26ABE2;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+/* Content Styles */
+section {
+    padding: 1em 0 3em;
+    text-align: center;
+}
+
+section.vibrant {
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+nav:before, 
+nav:after, 
+header:before, 
+header:after, 
+section:before, 
+section:after {
+    content: " ";
+    display: table;
+}
+
+nav:after, header:after, section:after  { clear: both; }
+nav, header, section { *zoom: 1; }
+
+
+
+/* Form Styles */
+input {
+    display: block;
+    vertical-align: middle;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+input:focus {
+    border-color: #007eb2;
+    outline: 0;
+}
+
+.docs-nav {
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    list-style: none;
+    margin: 0 0 10px 20px;
+    padding: 15px 20px;
+    font-size: 0.97em;
+}
+
+.docs-nav img {
+    width: 100%;
+    height: auto;
+}
+
+.docs-nav select {
+    width: 100%
+}
+
+.docs-nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+.docs-nav a {
+    display: inline-block;
+    margin: 0 -20px;
+    padding: 0 20px;
+    text-decoration: none;
+    border-right: 2px solid transparent;
+}
+
+.docs-nav input[type="search"] {
+    width: 50%;
+}
+
+.docs-nav input.search-submit[type="submit"] {
+    width: 40%;
+}
+
+@media only screen and (max-width: 400px) {
+    .docs-header .search-submit {
+        margin: 10px !important;
+        width: 70%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 960px) {
+    .docs-nav {
+        top: 0;
+        width: 220px;
+        -webkit-transition: top linear 50ms;
+        -moz-transition: top linear 50ms;
+        -o-transition: top linear 50ms;
+        transition: top linear 50ms;
+    }
+
+    .docs-nav.fixed {
+        position: fixed;
+        top: 49px;
+        width: 220px;
+    }
+
+
+    .docs-nav .separator {
+        height: 20px;
+    }
+
+
+    header {
+        padding: 4em 0 4em 0; 
+    }
+
+    .container {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    section { padding: 3em 0; text-align: left; }
+    section.centered {
+        text-align: center;
+    }
+
+   input {
+       display: inline-block;
+   }
+
+}

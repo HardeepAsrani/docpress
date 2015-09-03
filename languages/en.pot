@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DocPress\n"
+"POT-Creation-Date: 2015-08-27 04:57+0530\n"
+"PO-Revision-Date: 2015-08-27 04:57+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: comments.php:35
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:3
+msgid "Nothing found"
+msgstr ""
+
+#: content-none.php:5
+msgid ""
+"The page you were looking for doesn&rsquo;t exist. Sasquatch, on the other "
+"hand, just might."
+msgstr ""
+
+#: content-none.php:6
+msgid "But hey, you can always use our search form:"
+msgstr ""
+
+#: content-page.php:9 content-single.php:14
+msgid "Pages:"
+msgstr ""
+
+#: content-single.php:4
+msgid "Posted on"
+msgstr ""
+
+#: content-single.php:5
+msgid "- Posted by"
+msgstr ""
+
+#: content-single.php:16
+msgid "Tags: "
+msgstr ""
+
+#: footer.php:3
+msgid "DocPress"
+msgstr ""
+
+#: footer.php:3
+msgid " - Proudly powered by WordPress"
+msgstr ""
+
+#: functions.php:57
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:87
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:93
+msgid "The widgets which will appear on the main sidebar."
+msgstr ""
+
+#: header.php:16
+msgid "Toggle Navigation"
+msgstr ""
+
+#: header.php:45 inc/customizer.php:40
+msgid "Need Help? Try me!"
+msgstr ""
+
+#: header.php:46 inc/customizer.php:53
+msgid "Your answer is just one search away!"
+msgstr ""
+
+#: inc/customizer.php:19
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "This section allows you to customize theme's header."
+msgstr ""
+
+#: inc/customizer.php:29
+msgid "Text"
+msgstr ""
+
+#: inc/customizer.php:35 inc/customizer.php:90 searchform.php:3
+msgid "Search"
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Title"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Subtitle"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Disable Search Bar"
+msgstr ""
+
+#: inc/customizer.php:77 searchform.php:2
+msgid "Search..."
+msgstr ""
+
+#: inc/customizer.php:83
+msgid "Label"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Button"
+msgstr ""
+
+#: search.php:7
+msgid "Search results for:"
+msgstr ""
+
+#: searchform.php:7
+msgid "Search for:"
+msgstr ""
