@@ -44,3 +44,6 @@ Minor changes.
 
 = 0.09 =
 Minor changes.
+
+= 1.0 =
+Added Full Width Page Template.
