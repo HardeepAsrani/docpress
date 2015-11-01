@@ -5,8 +5,8 @@
  * Happy Blogging
 */
 
-include get_template_directory() . "/inc/customizer.php";
-include get_template_directory() . "/inc/wp_bootstrap_navwalker.php";
+require get_template_directory() . "/inc/customizer.php";
+require get_template_directory() . "/inc/wp_bootstrap_navwalker.php";
 
 function docpress_setup() {
 
