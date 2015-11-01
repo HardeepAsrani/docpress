@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DocPress\n"
-"POT-Creation-Date: 2015-08-27 04:57+0530\n"
-"PO-Revision-Date: 2015-08-27 04:57+0530\n"
+"POT-Creation-Date: 2015-11-02 04:08+0530\n"
+"PO-Revision-Date: 2015-11-02 04:08+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -85,51 +85,65 @@ msgstr ""
 msgid "Toggle Navigation"
 msgstr ""
 
-#: header.php:45 inc/customizer.php:40
+#: header.php:45 inc/customizer.php:52
 msgid "Need Help? Try me!"
 msgstr ""
 
-#: header.php:46 inc/customizer.php:53
+#: header.php:46 inc/customizer.php:65
 msgid "Your answer is just one search away!"
 msgstr ""
 
-#: inc/customizer.php:19
+#: inc/customizer.php:11
+#, php-format
+msgid ""
+"If you like this theme and if it helped you with your business then please "
+"consider supporting the development <a target=\"_blank\" href=\"http://www."
+"hardeepasrani.com/donate/\">by donating some money</a>. This theme is "
+"100% free and will always be. <a target=\"_blank\" href=\"http://www."
+"hardeepasrani.com/donate/\">Any amount, even $1.00, is appreciated :)</a>"
+msgstr ""
+
+#: inc/customizer.php:18
 msgid "Header"
 msgstr ""
 
-#: inc/customizer.php:20
+#: inc/customizer.php:19
 msgid "This section allows you to customize theme's header."
 msgstr ""
 
-#: inc/customizer.php:29
+#: inc/customizer.php:28
+msgid "Do You Like This Theme?"
+msgstr ""
+
+#: inc/customizer.php:33
 msgid "Text"
 msgstr ""
 
-#: inc/customizer.php:35 inc/customizer.php:90 searchform.php:3
+#: inc/customizer.php:39 inc/customizer.php:102 searchform.php:3
 msgid "Search"
 msgstr ""
 
-#: inc/customizer.php:46
+#: inc/customizer.php:58
 msgid "Title"
 msgstr ""
 
-#: inc/customizer.php:59
+#: inc/customizer.php:71
 msgid "Subtitle"
 msgstr ""
 
-#: inc/customizer.php:71
+#: inc/customizer.php:83
 msgid "Disable Search Bar"
 msgstr ""
 
-#: inc/customizer.php:77 searchform.php:2
+#: inc/customizer.php:89 searchform.php:2
 msgid "Search..."
 msgstr ""
 
-#: inc/customizer.php:83
+#: inc/customizer.php:95
 msgid "Label"
 msgstr ""
 
-#: inc/customizer.php:96
+#: inc/customizer.php:108
 msgid "Button"
 msgstr ""
 

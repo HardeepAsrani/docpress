@@ -19,31 +19,36 @@ Please visit http://wordpress.org/support/ if you have any questions about the t
 
 # Update Log #
 = 0.01 =
-Initial Release.
+- Initial Release.
 
 = 0.02 =
-Minor changes.
+- Minor changes.
 
 = 0.03 =
-Minor changes.
+- Minor changes.
 
 = 0.04 =
-Minor changes.
+- Minor changes.
 
 = 0.05 =
-Minor changes.
+- Minor changes.
 
 = 0.06 =
-Minor changes.
+- Minor changes.
 
 = 0.07 =
-Added some settings to Customizer
+- Added some settings to Customizer
 
 = 0.08 =
-Minor changes.
+- Minor changes.
 
 = 0.09 =
-Minor changes.
+- Minor changes.
 
 = 1.0 =
-Added Full Width Page Template.
+- Added Full Width Page Template.
+
+= 1.1 =
+- Added donation link.
+- Change in how to include PHP scripts.
+- Updated .pot file.
