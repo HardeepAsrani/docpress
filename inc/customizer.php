@@ -3,7 +3,6 @@
  * Register colors and layout for the Theme Customizer.
 */
 
-
 function docpress_customize_register($wp_customize) {
 
 	class DocPress_Support extends WP_Customize_Control {
@@ -83,32 +82,6 @@ function docpress_customize_register($wp_customize) {
 		'label' => __('Disable Search Bar','docpress'),
 		'section' => 'docpress_header_search',
 		'priority' => 5,
-	));
-
-	$wp_customize->add_setting('docpress_header_search_label', array(
-		'default' => __('Search...', 'docpress'),
-		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'sanitize_text_field'
-	));
-
-	$wp_customize->add_control('docpress_header_search_label', array(
-		'label' => __('Label', 'docpress'),
-		'section' => 'docpress_header_search',
-		'priority' => 10,
-		'settings' => 'docpress_header_search_label'
-	));
-
-	$wp_customize->add_setting('docpress_header_search_button', array(
-		'default' => __('Search', 'docpress'),
-		'capability' => 'edit_theme_options',
-		'sanitize_callback' => 'sanitize_text_field'
-	));
-
-	$wp_customize->add_control('docpress_header_search_button', array(
-		'label' => __('Button', 'docpress'),
-		'section' => 'docpress_header_search',
-		'priority' => 15,
-		'settings' => 'docpress_header_search_button'
 	));
 
 	function docpress_sanitize_checkbox( $input ) {

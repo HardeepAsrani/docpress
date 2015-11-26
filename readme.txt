@@ -52,3 +52,12 @@ Please visit http://wordpress.org/support/ if you have any questions about the t
 - Added donation link.
 - Change in how to include PHP scripts.
 - Updated .pot file.
+
+= 0.1.1 =
+- Minor changes.
+
+= 0.1.2 =
+- Minor changes.
+
+= 2.0 =
+- A major overhaul of the theme to make it look better.
