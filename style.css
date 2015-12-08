@@ -208,6 +208,7 @@ img.alignright,
 .widget_calendar td,
 .widget_calendar th {
 	text-align: center;
+	color: #FFF;
 }
 
 .navbar {
