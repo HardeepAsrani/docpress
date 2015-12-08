@@ -13,7 +13,7 @@ function docpress_setup() {
 	// Using this feature you can set the maximum allowed width for any content in the theme, like oEmbeds and images added to posts.  https://codex.wordpress.org/Content_Width
 	global $content_width;
 	if (!isset($content_width)) {
-		$content_width = 796;
+		$content_width = 620;
 	}
 
 	// Takes care of the <title> tag. https://codex.wordpress.org/Title_Tag
@@ -177,5 +177,4 @@ function docpress_comment($comment, $args, $depth) {
 	
 	endswitch;
 }
-?>
 ?>
