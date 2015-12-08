@@ -1,10 +1,10 @@
 body {
-    margin: 0px;
+	margin: 0px;
 }
 
 
 .grid {
-    width: 100%;
+	width: 100%;
 	max-width: 1240px;
 	min-width: 755px;
 	margin: 0 auto;
@@ -97,64 +97,64 @@ a {
 }
 
 .custom-box {
-    border: 1px solid #dadada;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 .custom-box:before {
-    content: "";
-    display: block;
-    padding-top: 90%;
+	content: "";
+	display: block;
+	padding-top: 90%;
 }
 .home-collection {
-    background: none repeat scroll 0 0 #fff;
+	background: none repeat scroll 0 0 #fff;
 }
 .custom-content {
-    bottom: 0;
-    color: white;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+	bottom: 0;
+	color: white;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 .custom-content div {
-    display: table;
-    height: 100%;
-    width: 100%;
+	display: table;
+	height: 100%;
+	width: 100%;
 }
 .custom-content span {
-    color: #999;
-    display: table-cell;
-    padding: 20px;
-    text-align: center;
-    vertical-align: middle;
+	color: #999;
+	display: table-cell;
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
 }
 .custom-content span > .fa {
-    color: #404040;
-    display: block;
-    font-size: 50px;
-    margin: 0 auto;
-    padding: 0 0 20px;
-    transition: all 0.2s ease-in-out 0s;
+	color: #404040;
+	display: block;
+	font-size: 50px;
+	margin: 0 auto;
+	padding: 0 0 20px;
+	transition: all 0.2s ease-in-out 0s;
 }
 .custom-content:hover .fa {
-    color: #1cbda2;
-    font-size: 58px;
-    transition: all 0.2s ease-in-out 0s;
+	color: #1cbda2;
+	font-size: 58px;
+	transition: all 0.2s ease-in-out 0s;
 }
 .custom-content span > h5 {
-    color: #404040;
+	color: #404040;
 	font-size: 18px;
 	line-height: 20px;
 	margin: 0;
 }
 .custom-content span > p {
-    font-size: 15px;
-    margin-bottom: 0;
+	font-size: 15px;
+	margin-bottom: 0;
 }
 
 @media handheld, only screen and (max-width: 800px) {

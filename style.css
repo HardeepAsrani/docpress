@@ -4,7 +4,7 @@ Theme URI: http://www.hardeepasrani.com/portfolio/docpress/
 Author: Hardeep Asrani
 Author URI: http://www.hardeepasrani.com/
 Description: DocPress is a responsive WordPress theme for documentation sites. If you want a documentation website for your product then this is the best pick, and it also has a search bar on the top section which makes it easier to use search for the content. Apart from that, it's built on Bootstrap!
-Version: 2.0
+Version: 2.1
 Tags: blue, white, light, responsive-layout, two-columns, left-sidebar, custom-header, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -85,38 +85,38 @@ input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="range"]:focus,
 textarea:focus {
-    border-color: #66AFE9;
-    outline: 0px none;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+	border-color: #66AFE9;
+	outline: 0px none;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
 }
 
 input[type="submit"],
 button {
-    color: #333;
+	color: #333;
 	display: block;
-    background-color: #E7E7E7;
-    margin-bottom: 0px;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid #CCC;
-    white-space: nowrap;
-    padding: 8px 12px;
-    font-size: 15px;
-    line-height: 1.4;
-    border-radius: 0px;
-    -moz-user-select: none;
+	background-color: #E7E7E7;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+	padding: 8px 12px;
+	font-size: 15px;
+	line-height: 1.4;
+	border-radius: 0px;
+	-moz-user-select: none;
 }
 
 input[type="submit"]:hover,
 input[type="submit"]:focus,
 button:hover,
 button:focus {
-    color: #333;
-    background-color: #CECECE;
-    border-color: #ADADAD;
+	color: #333;
+	background-color: #CECECE;
+	border-color: #ADADAD;
 }
 
 table {
@@ -132,7 +132,7 @@ table {
 .screen-reader-text {}
 
 .avatar {
-    float: left;
+	float: left;
 	margin-right: 25px;
 }
 
@@ -147,7 +147,7 @@ table {
 }
 
 article.sticky h2:before {
-    content: "Featured: ";
+	content: "Featured: ";
 }
 
 img.centered,
@@ -185,7 +185,7 @@ img.alignright,
 }
 
 .wp-caption {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .wp-caption-text {
@@ -273,15 +273,15 @@ header.jumbotron .form-group input.form-control {
 header.jumbotron .form-group .btn {
 	height: 50px;
 	padding: 0 40px;
-    color: #FFF;
-    background-color: #008CBA;
-    border-color: #0079A1;
+	color: #FFF;
+	background-color: #008CBA;
+	border-color: #0079A1;
 }
 
 header.jumbotron .form-group .btn:hover {
-    color: #FFF;
-    background-color: #006687;
-    border-color: #004B63;
+	color: #FFF;
+	background-color: #006687;
+	border-color: #004B63;
 }
 
 header.jumbotron .form-group .btn:focus {
@@ -305,7 +305,7 @@ div.doclist article  h2 {
 }
 
 div.doclist article:nth-child(2n) {
-    background: #F5F5F5 none repeat scroll 0% 0%;
+	background: #F5F5F5 none repeat scroll 0% 0%;
 }
 
 div.doc-main .content-area {
@@ -380,12 +380,12 @@ div.doc-main .content-area {
 }
 
 .sidebar .docwidget {
-    word-wrap: break-word;
-    background-color: #F5F5F5;
-    list-style: outside none none;
-    margin: 0px 20px 10px;
-    padding: 15px 20px;
-    font-size: 15px;
+	word-wrap: break-word;
+	background-color: #F5F5F5;
+	list-style: outside none none;
+	margin: 0px 20px 10px;
+	padding: 15px 20px;
+	font-size: 15px;
 }
 
 .sidebar .docwidget .widget-title {
@@ -402,12 +402,12 @@ div.doc-main .content-area {
 }
 
 .pagination {
-    display: block;
+	display: block;
 	font-size: 15px;
 }
 
 .pagination .right {
-    float: right;
+	float: right;
 }
 
 .pagination a:hover {

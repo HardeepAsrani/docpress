@@ -12,7 +12,7 @@
 
 class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
-    /**
+	/**
 	 * @see Walker::start_lvl()
 	 * @since 3.0.0
 	 *
@@ -78,7 +78,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$atts = array();
 			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
 			$atts['target'] = ! empty( $item->target )	? $item->target	: '';
-			$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
+			$atts['rel']	= ! empty( $item->xfn )		? $item->xfn	: '';
 
 			// If item has_children add atts to a.
 			if ( $args->has_children && $depth === 0 ) {
@@ -143,17 +143,17 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 * @return null Null on failure with no changes to parameters.
 	 */
 	public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
-        if ( ! $element )
-            return;
+		if ( ! $element )
+			return;
 
-        $id_field = $this->db_fields['id'];
+		$id_field = $this->db_fields['id'];
 
-        // Display this element.
-        if ( is_object( $args[0] ) )
-           $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
+		// Display this element.
+		if ( is_object( $args[0] ) )
+		   $args[0]->has_children = ! empty( $children_elements[ $element->$id_field ] );
 
-        parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-    }
+		parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
+	}
 
 	/**
 	 * Menu Fallback

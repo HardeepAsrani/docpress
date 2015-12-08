@@ -22,10 +22,10 @@ function docpress_customize_register($wp_customize) {
 	$wp_customize->get_section( 'header_image' )->title = 'Background';
 	$wp_customize->get_section( 'header_image' )->priority = 5;
 
-    $wp_customize->add_section('donate_section', array(
-        'priority' => 5,
-        'title' => __('Do You Like This Theme?', 'docpress')
-    ));
+	$wp_customize->add_section('donate_section', array(
+		'priority' => 5,
+		'title' => __('Do You Like This Theme?', 'docpress')
+	));
 
 	$wp_customize->add_section('docpress_header_text', array(
 		'priority' => 10,

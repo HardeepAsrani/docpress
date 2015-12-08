@@ -61,3 +61,9 @@ Please visit http://wordpress.org/support/ if you have any questions about the t
 
 = 2.0 =
 - A major overhaul of the theme to make it look better.
+
+= 2.1 =
+- Fixed extra closing tag bug.
+- Fixed color issue with calendar widget.
+- Fixed wrong content width.
+- Post loop will appear in middle if no sidebar.
