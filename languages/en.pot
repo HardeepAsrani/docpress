@@ -166,7 +166,7 @@ msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
 #: inc/theme-options.php:25
-msgid "DocPress - 2.0"
+msgid "DocPress - 2.1"
 msgstr ""
 
 #: inc/theme-options.php:27
