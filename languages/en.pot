@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: DocPress\n"
-"POT-Creation-Date: 2015-12-18 18:20+0530\n"
+"POT-Creation-Date: 2016-03-19 17:22+0530\n"
 "PO-Revision-Date: 2015-12-18 18:20+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;__;_x\n"
@@ -49,58 +50,56 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: footer.php:26
-msgid ""
-"<a target=\"_blank\" href=\"http://www.hardeepasrani.com/portfolio/docpress/"
-"\">DocPress</a><br/>Proudly powered by WordPress"
-msgstr ""
-
-#: functions.php:47
+#: functions.php:49
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:68
+#: functions.php:70
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:77
+#: functions.php:79
 msgid "Footer One"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:88
 msgid "Footer Two"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:97
 msgid "Footer Three"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:106
 msgid "Footer Four"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:134
+msgid "Proudly powered by"
+msgstr ""
+
+#: functions.php:149
 msgid "Pingback:"
 msgstr ""
 
-#: functions.php:140 functions.php:164
+#: functions.php:149 functions.php:173
 msgid "(Edit)"
 msgstr ""
 
-#: functions.php:152
+#: functions.php:161
 #, php-format
 msgid "<span>%s </span><span class=\"says\">says:</span>"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:164
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:160
+#: functions.php:169
 msgid "l, F j, Y, g:i a"
 msgstr ""
 
-#: functions.php:161
+#: functions.php:170
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
@@ -109,93 +108,103 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
-#: header.php:41 inc/customizer.php:51
+#: header.php:41 inc/customizer.php:78
 msgid "Need Help? Try me!"
 msgstr ""
 
-#: header.php:42 inc/customizer.php:64
+#: header.php:42 inc/customizer.php:91
 msgid "Your answer is just one search away!"
 msgstr ""
 
-#: inc/customizer.php:10
-#, php-format
+#: inc/admin/welcome-screen/content/content.php:25
+msgid ""
+"<strong>New Homepage:</strong> A new homepage which makes DocPress look "
+"truly like a documentation theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/content/content.php:26
+msgid ""
+"<strong>Welcome Panel:</strong> This version adds a Welcome Panel to the "
+"theme which tells you everything that you need to know about the theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/content/content.php:51
+msgid ""
+"Found an issue with the theme? You can get support <a href=\"https://"
+"wordpress.org/support/theme/docpress\" target=\"_blank\">at this link</a>. "
+"Or would you like to translate DocPress into your language? <a href="
+"\"https://translate.wordpress.org/projects/wp-themes/docpress\" target="
+"\"_blank\">Get involved</a>! Also, don't forget to <a href=\"https://"
+"wordpress.org/support/view/theme-reviews/docpress\" target=\"_blank\">leave "
+"a review</a>."
+msgstr ""
+
+#: inc/admin/welcome-screen/content/content.php:57
 msgid ""
 "If you like this theme and if it helped you with your business then please "
 "consider supporting the development <a target=\"_blank\" href=\"http://www."
-"hardeepasrani.com/donate/\">by donating some money</a>. This theme is "
-"100% free and will always be. <a target=\"_blank\" href=\"http://www."
-"hardeepasrani.com/donate/\">Any amount, even $1.00, is appreciated :)</a>"
+"hardeepasrani.com/donate/\">by donating some money</a>. <a target=\"_blank\" "
+"href=\"http://www.hardeepasrani.com/donate/\">Any amount, even $1.00, is "
+"appreciated :)</a>"
 msgstr ""
 
-#: inc/customizer.php:17
-msgid "Header"
+#: inc/admin/welcome-screen/welcome-screen.php:24
+msgid "Get started with DocPress"
 msgstr ""
 
-#: inc/customizer.php:18
-msgid "This section allows you to customize theme's header."
-msgstr ""
-
-#: inc/customizer.php:27
-msgid "Do You Like This Theme?"
+#: inc/customizer.php:23
+#, php-format
+msgid ""
+"If you like this theme and if it helped you with your business then please "
+"consider supporting the development %1$sby donating some money%2$s."
 msgstr ""
 
 #: inc/customizer.php:32
+msgid ""
+"To edit footer credits, you need to purchase the $5 <a href=\"https://goo.gl/"
+"ySDdIw\" target=\"_blank\">Footer Credits Extension</a>."
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:40
+msgid "This section allows you to customize theme's header."
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "Do You Like This Theme?"
+msgstr ""
+
+#: inc/customizer.php:54
 msgid "Text"
 msgstr ""
 
-#: inc/customizer.php:38 searchform.php:4 searchform.php:6
+#: inc/customizer.php:60
 msgid "Search"
 msgstr ""
 
-#: inc/customizer.php:57
+#: inc/customizer.php:66
+msgid "Footer Credits"
+msgstr ""
+
+#: inc/customizer.php:84
 msgid "Title"
 msgstr ""
 
-#: inc/customizer.php:70
+#: inc/customizer.php:97
 msgid "Subtitle"
 msgstr ""
 
-#: inc/customizer.php:82
+#: inc/customizer.php:109
 msgid "Disable Search Bar"
-msgstr ""
-
-#: inc/theme-options.php:13
-msgid "DocPress"
-msgstr ""
-
-#: inc/theme-options.php:19
-msgid "You do not have sufficient permissions to access this page."
-msgstr ""
-
-#: inc/theme-options.php:25
-msgid "DocPress - 2.1"
-msgstr ""
-
-#: inc/theme-options.php:27
-msgid ""
-"DocPress is a responsive WordPress theme for documentation sites. If you "
-"want a documentation website for your product then this is the best pick, "
-"and it also has a search bar on the top section which makes it easier to use "
-"search for the content. Apart from that, it's built on Bootstrap!"
-msgstr ""
-
-#: inc/theme-options.php:31
-msgid "What's new in this version? (IMPORTANT)"
-msgstr ""
-
-#: inc/theme-options.php:35
-msgid ""
-"In this version of DocPress, I've completely changed how the theme looked "
-"and felt. In all honesty, previous version was more like a lazy job so I "
-"worked hard to fix that in this release. And if you liked the older version "
-"better then you can download it <a target=\"_blank\" href=\"https://"
-"downloads.wordpress.org/theme/docpress.1.1.2.zip\">by clicking here</a>."
-msgstr ""
-
-#: inc/theme-options.php:39
-msgid "Start Customizing"
 msgstr ""
 
 #: searchform.php:4
 msgid "Search for:"
+msgstr ""
+
+#: template-home.php:20
+msgid "Browse"
 msgstr ""

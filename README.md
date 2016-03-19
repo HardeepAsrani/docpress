@@ -8,9 +8,28 @@ DocPress is a responsive WordPress theme for documentation sites. If you want a 
 4. Click *Activate* to use the theme you just installed.
 
 # Copyright, License & Other info #
-License: [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 
+License: [GNU General Public License v2.0] or later - http://www.gnu.org/licenses/gpl-2.0.txt
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License. See License URI in style.css for further details.
+
+## Libraries ##
+
+Bootstrap, http://getbootstrap.com/
+Copyright © 2011-2015 Twitter, Inc, MIT License, http://www.opensource.org/licenses/MIT
+
+FontAwesome, http://fontawesome.io/
+Copyright © 2015, Dave Gandy,
+Font Awesome licensed under SIL OFL 1.1, http://scripts.sil.org/OFL
+Code licensed under MIT License, http://www.opensource.org/licenses/MIT
+Documentation licensed under CC BY 3.0, http://creativecommons.org/licenses/by/3.0/
+
+jquery.matchHeight.js, http://brm.io/jquery-match-height/
+Copyright © 2014, liabru, MIT License, http://www.opensource.org/licenses/MIT
+
+wp_bootstrap_navwalker, https://github.com/twittem/wp-bootstrap-navwalker
+Copyright, Edward McIntyre, GPL-2.0+, http://www.gnu.org/licenses/gpl-2.0.txt
+
+## Image ##
 
 Creative Commons 0 (Header Image): https://pixabay.com/en/woman-working-business-woman-690036/
 
@@ -67,3 +86,9 @@ Please visit http://wordpress.org/support/ if you have any questions about the t
 - Fixed color issue with calendar widget.
 - Fixed wrong content width.
 - Post loop will appear in middle if no sidebar.
+
+= 2.2 =
+- Added Homepage template.
+- Added full-width page template.
+- Escaped data.
+- New theme panel.

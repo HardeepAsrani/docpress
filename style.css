@@ -4,13 +4,13 @@ Theme URI: http://www.hardeepasrani.com/portfolio/docpress/
 Author: Hardeep Asrani
 Author URI: http://www.hardeepasrani.com/
 Description: DocPress is a responsive WordPress theme for documentation sites. If you want a documentation website for your product then this is the best pick, and it also has a search bar on the top section which makes it easier to use search for the content. Apart from that, it's built on Bootstrap!
-Version: 2.1
+Version: 2.2
 Tags: blue, white, light, responsive-layout, two-columns, left-sidebar, custom-header, custom-menu, featured-images, sticky-post, threaded-comments, translation-ready
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: docpress
 
-DocPress WordPress Theme, Copyright 2015 Hardeep Asrani
+DocPress WordPress Theme, Copyright 2016 Hardeep Asrani
 Hardeep is distributed under the terms of the GNU GPL
 */
 
@@ -292,6 +292,36 @@ header.jumbotron .form-group .btn:focus {
 
 div.doc-main .container {
 	padding: 50px 15px;
+}
+
+div.doc-main .box {
+	background:#FFF;
+	transition:all 0.2s ease;
+	border:2px dashed #DADADA;
+	margin: 20px 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-clip: padding-box;
+	padding:0 20px 20px 20px;
+}
+
+div.doc-main .box .doc-title {
+    font-size: 24px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 20px;
+}
+
+div.doc-main .box .box-content {
+	padding: 16px;
+	border-radius: 0 0 2px 2px;
+	background-clip: padding-box;
+	box-sizing: border-box;
+}
+
+div.doc-main .box .box-content p {
+	color:#515C66;
+	text-transform:none;
+	margin: 20px 0px;
 }
 
 div.doclist article  {
