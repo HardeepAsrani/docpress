@@ -131,7 +131,7 @@ add_action( 'wp_enqueue_scripts', 'docpress_scripts' );
 
 // Added footer credits
 function docpress_footer_credits() {
-	echo '<span><a rel="nofollow" href="http://www.hardeepasrani.com/portfolio/docpress/">DocPress</a> - '.__('Proudly powered by','latte').' WordPress</span>';
+	echo '<span><a rel="nofollow" href="http://www.hardeepasrani.com/portfolio/docpress/">DocPress</a> - '.__('Proudly powered by','docpress').' WordPress</span>';
 }
 add_action( 'docpress_credits', 'docpress_footer_credits' );
 
