@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+ 	/**
+	* Template Name: Full-width Template
+	*/
+
+	get_header(); ?>
 
 	<div class="doc-main">
 		<div class="container">

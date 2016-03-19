@@ -23,7 +23,7 @@
 			<?php endif; ?>
 				<div class="col-xs-12 col-sm-12 col-lg-12">
 					<div class="footer-credits text-center">
-						<?php echo '<p>' . __( 'Copyright &#x000A9;&nbsp;'.date("Y").' ~ <a target="_blank" href="http://www.hardeepasrani.com/portfolio/docpress/">DocPress</a><br/>Proudly powered by WordPress', 'docpress' ) . '</p>'; ?>
+						<?php do_action('docpress_credits'); ?>
 					</div>
 				</div>
 			</div>

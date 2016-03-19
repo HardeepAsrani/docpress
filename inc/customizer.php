@@ -3,11 +3,33 @@
  * Register colors and layout for the Theme Customizer.
 */
 
+function docpress_sanitize_checkbox( $input ) {
+	if ( $input == 1 ) {
+		return 1;
+	} else {
+		return '';
+	}
+}
+
+function docpress_sanitize_text( $input ) {
+	return $input;
+}
+
 function docpress_customize_register($wp_customize) {
 
 	class DocPress_Support extends WP_Customize_Control {
 		public function render_content() {
-			echo __('If you like this theme and if it helped you with your business then please consider supporting the development <a target="_blank" href="http://www.hardeepasrani.com/donate/">by donating some money</a>. This theme is 100% free and will always be. <a target="_blank" href="http://www.hardeepasrani.com/donate/">Any amount, even $1.00, is appreciated :)</a>','docpress');
+			printf(
+				__( 'If you like this theme and if it helped you with your business then please consider supporting the development %1$sby donating some money%2$s.', 'docpress' ),
+				'<a target="_blank" href="http://www.hardeepasrani.com/donate/">',
+				'</a>'
+			);
+		}
+	}
+
+	class DocPress_Footer_Extension extends WP_Customize_Control {
+		public function render_content() {
+			echo __('To edit footer credits, you need to purchase the $5 <a href="https://goo.gl/ySDdIw" target="_blank">Footer Credits Extension</a>.','docpress');
 		}
 	}
 
@@ -37,6 +59,11 @@ function docpress_customize_register($wp_customize) {
 		'priority' => 15,
 		'title' => __('Search', 'docpress'),
 		'panel'  => 'docpress_header',
+	));
+
+	$wp_customize->add_section('docpress_footer_credits', array(
+		'priority' => 20,
+		'title' => __('Footer Credits', 'docpress'),
 	));
 
 	$wp_customize->add_setting( 'donate_section_main', array(
@@ -84,17 +111,13 @@ function docpress_customize_register($wp_customize) {
 		'priority' => 5,
 	));
 
-	function docpress_sanitize_checkbox( $input ) {
-		if ( $input == 1 ) {
-			return 1;
-		} else {
-			return '';
-		}
-	}
+	$wp_customize->add_setting( 'docpress_footer_credits_info', array(
+		'sanitize_callback' => 'docpress_sanitize_text'
+	));
 
-	function docpress_sanitize_text( $input ) {
-		return $input;
-	}
+	$wp_customize->add_control( new DocPress_Footer_Extension( $wp_customize, 'docpress_footer_credits_info', array(
+		'section' => 'docpress_footer_credits',
+	)));
 }
 add_action('customize_register', 'docpress_customize_register');
 

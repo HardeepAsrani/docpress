@@ -5,9 +5,11 @@
  * Happy Blogging!
 */
 
-require get_template_directory() . "/inc/customizer.php";
-require get_template_directory() . "/inc/wp_bootstrap_navwalker.php";
-require get_template_directory() . "/inc/theme-options.php";
+require_once( trailingslashit( get_template_directory() ) . "/inc/customizer.php" );
+require_once( trailingslashit( get_template_directory() ) . "/inc/wp_bootstrap_navwalker.php" );
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/welcome-screen/welcome-screen.php';
+}
 
 function docpress_setup() {
 	// Using this feature you can set the maximum allowed width for any content in the theme, like oEmbeds and images added to posts.  https://codex.wordpress.org/Content_Width
@@ -20,7 +22,7 @@ function docpress_setup() {
 	add_theme_support('title-tag');
 	
 	// Loads texdomain. https://codex.wordpress.org/Function_Reference/load_theme_textdomain
-	load_theme_textdomain('docpress', get_stylesheet_directory() . '/languages');
+	load_theme_textdomain('docpress', get_template_directory() . '/languages');
 
 	// Add automatic feed links support. https://codex.wordpress.org/Automatic_Feed_Links
 	add_theme_support('automatic-feed-links');
@@ -39,7 +41,7 @@ function docpress_setup() {
 		// Header text
 		'header-text' => false,
 		// Default image
-		'default-image' => get_stylesheet_directory_uri() . '/assets/img/header.jpg',
+		'default-image' => get_template_directory_uri() . '/assets/img/header.jpg',
 	));
 
 	// This theme uses wp_nav_menu(). https://codex.wordpress.org/Function_Reference/register_nav_menu
@@ -116,15 +118,22 @@ add_action( 'widgets_init', 'docpress_widgets_init' );
 // Registering and enqueuing scripts/stylesheets to header/footer.
 function docpress_scripts() {
 	
-	wp_enqueue_style( 'docpress_bootstrap_css', get_stylesheet_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css');
-	wp_enqueue_style( 'docpress_font_awesome', get_stylesheet_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style( 'docpress_bootstrap_css', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css');
+	wp_enqueue_style( 'docpress_font_awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css');
 	wp_enqueue_style( 'docpress_style', get_stylesheet_uri());
 	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
-	wp_enqueue_script( 'docpress_bootstrap_js', get_stylesheet_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ),'',true);
-
+	wp_enqueue_script( 'docpress_bootstrap_js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', array( 'jquery' ),'',true);
+	if( is_page_template( 'template-home.php' ) ) wp_enqueue_script( 'docpress_matchheight_js', get_template_directory_uri() . '/assets/js/jquery.matchHeight.js', array( 'jquery' ),'',true);
+	if( is_page_template( 'template-home.php' ) ) wp_enqueue_script( 'docpress_scripts_js', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ),'',true);
 }
 
 add_action( 'wp_enqueue_scripts', 'docpress_scripts' );
+
+// Added footer credits
+function docpress_footer_credits() {
+	echo '<span><a rel="nofollow" href="http://www.hardeepasrani.com/portfolio/docpress/">DocPress</a> - '.__('Proudly powered by','latte').' WordPress</span>';
+}
+add_action( 'docpress_credits', 'docpress_footer_credits' );
 
 // Custom comments style
 function docpress_comment($comment, $args, $depth) {
@@ -150,7 +159,7 @@ function docpress_comment($comment, $args, $depth) {
 						<div class="comment-author vcard" >
 							<?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
 							<?php printf( __( '<span>%s </span><span class="says">says:</span>', 'docpress' ), sprintf( '<b class="fn">%s</b>', get_comment_author_link() ) ); ?>
-						</div><!-- .comment-author .vcard -->
+						</div>
 						<?php if ( $comment->comment_approved == '0' ) : ?>
 							<em><?php _e( 'Your comment is awaiting moderation.', 'docpress' ); ?></em>
 							<br />
@@ -162,15 +171,15 @@ function docpress_comment($comment, $args, $depth) {
 								</time>
 							</a>
 							<?php edit_comment_link( __( '(Edit)', 'docpress' ), ' ' );?>
-						</div><!-- .comment-meta .commentmetadata -->
+						</div>
 					</footer>
 
 					<div class="comment-content"><?php comment_text(); ?></div>
 
 					<div class="reply">
 						<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-					</div><!-- .reply -->
-				</article><!-- #comment-## -->
+					</div>
+				</article>
 
 <?php
 		break;
